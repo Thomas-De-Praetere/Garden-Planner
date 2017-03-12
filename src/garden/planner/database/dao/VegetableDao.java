@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package garden.planner.dto;
+package garden.planner.database.dao;
+
+import garden.planner.dto.Vegetable;
+import java.util.List;
 
 /**
  *
  * @author Thomas De Praetere
  */
-public class Vegetable {
+public interface VegetableDao {
 
-    public String name;
-
-    public Vegetable(String name) {
-        this.name = name;
-    }
-
+    List<Vegetable> getVegetables();
 }

@@ -3,18 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package garden.planner.dto;
+package garden.planner.database.provider;
+
+import garden.planner.database.context.Context;
 
 /**
  *
  * @author Thomas De Praetere
  */
-public class Vegetable {
+public interface Provider {
 
-    public String name;
-
-    public Vegetable(String name) {
-        this.name = name;
-    }
-
+    Context getContext();
 }
